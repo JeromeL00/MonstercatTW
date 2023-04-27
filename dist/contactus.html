@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US- Monstercat</title>
+    <link rel="icon" href="img/monstercat-logo.webp" type ="image/x-icon">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preload" href="/dist/fonts/Monbold.otf">
+    <link rel="preload" href="/dist/fonts/Monreg.otf">
+
+</head>
+<body>
+    <div class="absolute top-0 left-0 w-[100vw] z-[-1] overflow-hidden opacity-40" style="max-height: 100vh;">
+        <div class="relative">
+            <img class="bg-[#f1f1f1] w-[100%]" src="https://cdx.monstercat.com?encoding=webp&url=https%3A%2F%2Fcdn.monstercat.com%2Fcontact%2Fbg-contact-us.webp&width=1400" alt="">
+        </div>
+    </div>
+    
+    <header class="social-links">
+        <div class="notice absolute bottom-4 w-[100%]" style="pointer-events: initial;"></div>
+        <div class="container">
+            <div class="content text-secondary" style="font-size: 20px;">
+                <a id="logo" href="#">
+                    <img class="w-[50px] h-[50px]" src="img/monstercat-logo.webp"alt="">
+                </a>
+
+                <ul>
+                    <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-tiktok"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-twitch"></i></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-facebook"></i></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-discord"></i></i></li>
+                    <li><a href="#"></a><i class="fa-sharp fa-solid fa-circle-play"></i></i></li> 
+                </ul>
+
+                <button id="menu-toggle" onclick="toggleMenu()" class="btn-link flex text-[24px]">
+                    <span class="hidden">Open Main Menu</span>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                
+            </div>
+            
+            <nav id="navigation" onclick="toggleMenu()">
+            <div class="navigation-container" onclick="event.stopPropagation()">
+            <div class="top">
+                <a href="#">
+                    <img src="https://cdn.monstercat.com/monstercat-logo-white.svg" alt="" width="180px">
+                </a>
+                <button class="btn btn-link close-menu" onclick="toggleMenu()" title="Close Menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="scroller">
+                <ul class="">
+                    <li class="has-sudmenu"><a href="#">Music</a></li>
+                    <li class="has-sudmenu"><a href="#">Artists</a></li>
+                    <li class="has-sudmenu"><a href="#">About</a></li>
+                    <li class="has-sudmenu"><a href="#">News</a></li>
+                    <li class="has-sudmenu"><a href="#">Events</a></li>
+                    <li class="has-sudmenu"><a href="#">Programming</a></li>
+                    <li class="has-sudmenu"><a href="#">Gold</a></li>
+                    <li class="has-sudmenu"><a href="#">Partners</a></li>
+                    <li class="has-sudmenu"><a href="#">Press</a></li>
+                    <li class="has-sudmenu"><a href="#">Player</a></li>
+                    <li class="has-sudmenu"><a href="#">Shop</a></li>
+                    <li class="has-sudmenu"><a href="#">Civilization</a></li>   
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul class="social-icons"></ul>
+            </div>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+    <article class="contact-us-section mt-[6rem] text-secondary w-[60rem] mx-auto ">
+        <h1 class="uppercase font-monureg text-[3.5rem]">
+            <span class="">Contact</span> Us
+        </h1>
+        <section class="submit-section mb-12" style="border-bottom: solid 1px rgba(137, 136, 136, 0.5); border-color: #c4c4c4;">
+            <div class="pt-[2rem] pb-[2rem] grid grid-cols-[2, 1fr] gap-10" style="border-bottom: solid 1px rgba(137, 136, 136, 0.5); border-color: #c4c4c4;">
+                <div>
+                    <h2 class="text-[22px] font-[400] uppercase font-monureg tracking-widest">Submit a demo</h2>
+                </div>
+                <div class="" style="grid-column-start: 2; grid-column-end: 4;">
+                    <p class="text-[#c4c4c4] italic leading-7 text-[18px] font-montserrat" style="margin-top: 0 !important; margin-block-start: 1rem; margin-block-end: 1rem;">
+                        <strong>Have a demo to submit?</strong>
+                        We take the time to listen to every demo submitted. Please only submit your best and original work.
+                    </p>
+                    <div class="mt-[2rem] grid grid-cols-3 gap-3 uppercase font-monureg tracking-widest text-[0.8rem]">
+                        <a class="text-center border-solid border-[1px] border-secondary  py-3 px-5 hover:bg-secondary hover:text-gray" href="#">Uncage Demo</a>
+                        <a class="text-center border-solid border-[1px] border-secondary  py-3 px-5 hover:bg-secondary hover:text-gray" href="#">Instinct Demo</a>
+                        <a class="text-center border-solid border-[1px] border-secondary  py-3 px-5 hover:bg-secondary hover:text-gray" href="#">Silk Demo</a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="pt-[2rem] grid grid-cols-[2, 1fr] gap-10">
+                    <div>
+                        <h2 class="text-[22px] font-[400] uppercase font-monureg tracking-widest">Need more Info</h2>
+                    </div>
+                    <div class="" style="grid-column-start: 2; grid-column-end: 4;">
+                        <p class="text-[#c4c4c4] italic leading-7 text-[18px] font-montserrat" style="margin-top: 0 !important; margin-block-start: 1rem; margin-block-end: 1rem;">
+                            Please consider reading some of these before contacting us for <br> further help!
+                        </p>
+                    </div>
+            </div>
+                
+                <ul class="m-0 p-0 font-montserrat py-16 mb-10" style="border-bottom: solid 1px rgba(137, 136, 136, 0.5); border-color: #c4c4c4;">
+                        <li class="accordionList">
+                            <h3 class=" accordionTitle hover:text-black p-5 border border-white cursor-pointer group hover:bg-white flex justify-between items-center">
+                                Where can I get more information on Monstercat Gold?
+                                <i class="fa-solid fa-plus transition-all"></i>
+                            </h3>
+                            <div class="collapsable p-5 italic overflow-hidden">
+                                <h3 class="p-5">You can get more info about our Gold Program here.</h3>
+                            </div>
+                        </li>
+                        <li class="accordionList">
+                            <h3 class=" accordionTitle hover:text-black p-5 border border-white cursor-pointer group hover:bg-white flex justify-between items-center">
+                                Where can I get music for my YouTube/Twitch channel?
+                                <i class="fa-solid fa-plus transition-all"></i>
+                            </h3>
+                            <div class="collapsable p-5 italic overflow-hidden">
+                                <h3 class="p-5">You can sign up for our Gold Program here if you are a content creator. For commercial usage please visit our partners page.</h3>
+                            </div>
+                        </li>
+                        <li class="accordionList">
+                            <h3 class=" accordionTitle hover:text-black p-5 border border-white cursor-pointer group hover:bg-white flex justify-between items-center">
+                                Sync and Partnership Info and Inquiry
+                                <i class="fa-solid fa-plus transition-all"></i>
+                            </h3>
+                            <div class="collapsable p-5 italic overflow-hidden">
+                                <h3 class="p-5">Please visit our partners page for more information about commercial licensing and sync information.</h3>
+                            </div>
+                        </li>
+                        <li class="accordionList">
+                            <h3 class=" accordionTitle hover:text-black p-5 border border-white cursor-pointer group hover:bg-white flex justify-between items-center">
+                                I’m having payment issues with my Gold membership.
+                                <i class="fa-solid fa-plus transition-all"></i>
+                            </h3>
+                            <div class="collapsable p-5 italic overflow-hidden">
+                                <h3 class="p-5">Please contact Xsolla support here for any payment issues or requesting a refund.</h3>
+                            </div>
+                        </li>
+                        <li class="accordionList">
+                            <h3 class=" accordionTitle hover:text-black p-5 border border-white cursor-pointer group hover:bg-white flex justify-between items-center">
+                                I’m having issues with my user login.
+                                <i class="fa-solid fa-plus transition-all"></i>
+                            </h3>
+                            <div class="collapsable p-5 italic overflow-hidden">
+                                <h3 class="p-5">Please try our forgot password functionality before contacting support. Thank you.</h3>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <section class="font-montserrat">
+                        <div class="grid grid-cols-3 gap-[10rem]">
+                                <div class="text-white">
+                                    <h2 class="text-[22px] font-monureg mb-[3rem]">WANT TO CONNECT</h2>
+                                    <div class="italic text-[18px] leading-7">
+                                        <div class="mb-4">
+                                            <h3>Support Inquiries</h3>
+                                            <a class="font-semibold" href="">support@monstercat.com</a>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h3>Support Inquiries</h3>
+                                            <a class="font-semibold" href="">support@monstercat.com</a>
+                                        </div>
+                                        <div class="mb-4">
+                                            <h3>Support Inquiries</h3>
+                                            <a class="font-semibold" href="">support@monstercat.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="p-5 mr-auto border border-white text-center mb-10">
+                                    <div class="lg:flex py-8 text-white">
+                                        <div class="mb-4">
+                                            <h5 class="text-left ml-[14px] ">NAME</h5>
+                                            <form class=" px-4" action="">
+                                                <input class="p-2 bg-transparent outline outline-white w-[15rem]" type="text" placeholder="NAME" >
+                                            </form>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-left ml-[14px] ">EMAIL</h5>
+                                            <form class=" px-4" action="">
+                                                <input class="p-2 bg-transparent k outline outline-white w-[15rem]" type="text" placeholder="EMAIL" >
+                                            </form>
+                                        </div>
+                                        
+                                       
+                                    </div>
+                                    <div class="mb-8">
+                                        <h5 class="text-left px-4 ml-[8.2rem] pl-[2rem]  lg:px-4 text-white">MESSAGE</h5>
+                                        <form class=" px-4" action="">
+                                            <input class="p-2 bg-transparent outline outline-white w-[15rem]" type="text" placeholder="MESSAGE" >
+                                        </form>
+                                    </div>
+                                    <a class="text-black px-4 py-2 bg-white ml-4 font-bold" href="">SUBMIT</a>
+                                </div>
+                    </section>
+                
+    </article>
+
+    <footer class="footer text-secondary mb-[5rem] w-[59rem] mx-auto">
+        <div class="footercontent font-monureg text-[18px]">
+            <nav class="grid grid-cols-3 gap-[1rem]">
+                <ul  class="leading-8 tracking-widest">
+                    <li><a href="#">ABOUT MONSTERCAT</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">PRESS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">TERMS OF SERVICE</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                </ul>
+                <div class="leading-7">
+                    <p class="text-[#898888]">MONSTERCAT NEWS</p>
+                    <p class="italic text-[0.9rem] tracking-widest  font-montserrat">Don't miss a thing, stay up to date with the latest news from us.</p>
+                    <form class="signup-input  text-[73%] mt-6 border-b border-solid-[1px] border-[#3e3b3c] flex pb-[0.5rem]">
+                        <input class="input-bordered border-transparent bg-transparent" placeholder="Enter email" name="email">
+                        <button type="submit" class="input-bordered border-transparent rounded-none">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <hr class="mb-[3rem] mt-[3rem]">
+        <div class="clearfix grid grid-cols-2">
+            <p class="italic tracking-widest">2011 - 2023 © Monstercat, All Rights Reserved</p>
+        
+        <div class="items-center justify-end">
+            <ul class="float-right flex text-[18px] gap-[1rem]">
+                <li><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-tiktok"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-spotify"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-apple"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-twitch"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-discord"></i></li>
+                <li><a href="#"></a><i class="fa-solid fa-circle-play"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+    </div>
+    <p class="text-center pt-10 text-[0.8rem] tracking-widest font-montserrat italic">We acknowledge with gratitude the traditional, ancestral and unceded land of the Coast Salish peoples, including the territories of the Sḵwx̱wú7mesh (Squamish), Stó:lō and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) and xʷməθkʷəy̓əm (Musqueam) Nations, on which Monstercat's Vancouver HQ stands.</p>
+    <p class="text-center mt-5 text-[0.8rem] font-montserrat italic">We acknowledge the unceded and ancestral territories of the Gabrielino/Tongva peoples on which our LA team live and work.</p>
+    </footer>
+
+    <script>
+        const accordionList = document.querySelectorAll('.accordionTitle');
+
+        accordionList.forEach((accordion) => {
+            accordion.addEventListener('click', () => {
+                accordion.classList.toggle('active');
+            })
+        })
+       
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Monstercat</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preload" href="/dist/fonts/Monbold.otf">
+    <link rel="preload" href="/dist/fonts/Monreg.otf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="icon" href="img/monstercat-logo.webp" type ="image/x-icon">
+
+</head>
+<body>
+
+    <div class="aboutbanner opacity-[0.4] absolute w-[100%] z-[-1] top-0 left-0">
+        <div class="gradient"></div>
+        <video class="video-bg absolute z-0 w-[100%] h-[100%] object-cover" autoplay muted loop>
+            <source src="https://cdn.monstercat.com/about/AboutMC-Banner.webm">
+        </video>
+        <img src="https://cdx.monstercat.com?encoding=webp&url=https%3A%2F%2Fcdn.monstercat.com%2Fabout%2Fabout-bg.webp&width=1400" alt="">
+    </div>
+
+    <header class="social-links">
+        <div class="notice absolute bottom-4 w-[100%]" style="pointer-events: initial;"></div>
+        <div class="container">
+            <div class="content text-secondary" style="font-size: 20px;">
+                <a id="logo" href="#">
+                    <img class="w-[50px] h-[50px]" src="img/monstercat-logo.webp"alt="">
+                </a>
+
+                <ul>
+                    <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-tiktok"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-twitch"></i></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-facebook"></i></i></li>
+                    <li><a href="#"></a><i class="fa-brands fa-discord"></i></i></li>
+                    <li><a href="#"></a><i class="fa-sharp fa-solid fa-circle-play"></i></i></li> 
+                </ul>
+
+                <button id="menu-toggle" onclick="toggleMenu()" class="btn-link flex text-[24px]">
+                    <span class="hidden">Open Main Menu</span>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                
+            </div>
+            
+            <nav id="navigation" onclick="toggleMenu()">
+            <div class="navigation-container" onclick="event.stopPropagation()">
+            <div class="top">
+                <a href="#">
+                    <img src="https://cdn.monstercat.com/monstercat-logo-white.svg" alt="" width="180px">
+                </a>
+                <button class="btn btn-link close-menu" onclick="toggleMenu()" title="Close Menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="scroller">
+                <ul class="">
+                    <li class="has-sudmenu"><a href="#">Music</a></li>
+                    <li class="has-sudmenu"><a href="#">Artists</a></li>
+                    <li class="has-sudmenu"><a href="#">About</a></li>
+                    <li class="has-sudmenu"><a href="#">News</a></li>
+                    <li class="has-sudmenu"><a href="#">Events</a></li>
+                    <li class="has-sudmenu"><a href="#">Programming</a></li>
+                    <li class="has-sudmenu"><a href="#">Gold</a></li>
+                    <li class="has-sudmenu"><a href="#">Partners</a></li>
+                    <li class="has-sudmenu"><a href="#">Press</a></li>
+                    <li class="has-sudmenu"><a href="#">Player</a></li>
+                    <li class="has-sudmenu"><a href="#">Shop</a></li>
+                    <li class="has-sudmenu"><a href="#">Civilization</a></li>   
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul class="social-icons"></ul>
+            </div>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+    <article class="mt-[6rem] w-[60rem] mx-auto">
+        <section class="about-content text-secondary">
+            <h1 class="break-words font-monureg mb-10">
+                <span class="">ABOUT</span>
+                <br>
+                MONSTERCAT  
+            </h1>
+            <div class="mb-10">
+                <p class="align-top">
+                    <a class="btn border-solid border-[1px] border-secondary py-[1.6rem] px-[1.8rem] font-[500] h-[25px] text-[14px] inline-flex relative items-center justify-center cursor-pointer whitespace-nowrap tracking-widest hover:bg-secondary hover:text-gray" id="play-video-button">
+                        <i class="fa-solid fa-circle-play inline-block font-normal pr-[1rem]" style="line-height: 1; text-rendering: auto; font-variant: normal;"></i>PLAY VIDEO
+                    </a>
+                </p>
+            </div>
+            <div class="w-[70%] text-justify mb-5 text-[18px] font-normal">
+                <p class="font-montserrat italic" style="line-height: 2;">Monstercat is one of electronic music’s most influential independent record labels. Founded in Waterloo, Canada in 2011, Monstercat has since expanded its global footprint with offices in Vancouver, Los Angeles, and Singapore. Backed by passionate employees, driven artists, and the dedication of fans worldwide, Monstercat proves that independent labels have the ability to reshape and reimagine the music industry landscape.</p>
+            </div>
+        </section>
+    </article>
+
+    <section class="ourVision mb-[9rem] mt-[9rem] text-center text-secondary font-monureg" style="line-height: 1;">
+        <h2 class="text-[2.5rem] mt-0 mb-10 font-[600] tracking-widest">OUR VISION</h2>
+        <p class="w-[75%] m-auto text-[1.1rem] italic leading-6 tracking-widest font-[300]" style="line-height: 2;">TO BUILD THE WORLD’S MOST INNOVATIVE MUSIC COMPANY, LEADING THE MOVEMENT TOWARDS ARTIST SUSTAINABILITY</p>
+    </section>
+
+    <section class="aboutUsContent mb-5 text-secondary w-[75%] mx-auto">
+        <div class="grid grid-cols-2 gap-[3rem]">
+            <div class="flex justify-center flex-col font-montserrat">
+                <h2 class="mb-[2rem] mt-0 font-monureg" style="letter-spacing: 0.1em; font-size: 2.5em; line-height: 1;">What We Do</h2>
+                <p class="italic leading-7" style="margin-top: 0 !important; margin-bottom: 0 !important; margin-block-start: 1rem; margin-block-end: 1rem; font-size: 18px;">
+                    Championing a cadre of world-renowned artists, Monstercat exceeds 200 million global audio streams monthly. With six releases a week across its Uncaged, Instinct, and Silk brands, Monstercat has topped radio and streaming charts worldwide, offering a diverse range of genres across bass, dance, pop, house, chill, and electronic.
+                    <br>
+                    <br>
+                    In addition to its genre-diverse music offerings, Monstercat is known for its non-exclusive record deals which allow artists flexibility and creative freedom. To further its mission of artist sustainability, the label adheres to a 50⁄50 split model, ensuring artists royalty payments monthly so they can work towards making a living off their music and art.
+                    <br>
+                    <br>
+                    Beyond recorded music, Monstercat channels the undeniable power of its brand into apparel, live events, gaming partnerships and sync deals. Spanning over 100 events across 16 countries, Monstercat has hosted stages and shows at notable international festivals including Tomorrowland, Amsterdam Dance Event, and Miami Music Week. The label also throws its own homegrown festival, Compound, which draws thousands of fans to Vancouver in celebration of community, music, art, and more
+                </p>
+            </div>
+            <div class="flex justify-center flex-col font-montserrat">
+                <p class="italic leading-7" style="margin-top: 0 !important; margin-bottom: 0 !important; margin-block-start: 1rem; margin-block-end: 1rem; font-size: 18px;">
+                    Monstercat’s live radio program ‘Call of the Wild’ boosts the signal even further, reaching millions of listeners weekly through its syndication partnerships across 30+ global networks, including SiriusXM and leading livestreaming platform Twitch. In 2021, the Monstercat Silk Showcase entered the fold, which features mixes from a rotating cast of artists across progressive & deep house, chillout, trance, and more. In 2020, Monstercat launched the original entertainment series, mctv, which serves as a global discovery hub for fans and a performance opportunity for artists on Monstercat’s leading Twitch channel.
+                    <br>
+                    <br>
+                    Within the work of sync and partnerships, Monstercat has redefined music licensing for content creators and major brands. Undertaking co-branded soundtracks, in-game activations, and collaborations with game publishers and titles including Epic/Psyonix (Fortnite, Rocket League), Roblox, Hi-Rez Studios (SMITE), Amanotes, and Beat Games (Beat Saber), Monstercat offers curated solutions that continue to excite and fuel the gaming community. Additionally, Monstercat supports content creators with its music licensing program, Monstercat Gold, which allows creators to choose from thousands of songs in the label’s ever-growing library, for claim-free use in livestream and video content.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="subContent mb-[6rem] text-secondary font-montserrat w-[75%] mx-auto">
+        <div class="ml-auto mr-auto">
+            <div class="grid grid-cols-2 gap-[3rem]">
+                <div>
+                    <img class="img-responsive max-w-[100%] max-h-[100%]" src="https://cdn.monstercat.com/about/about-us-img-2.webp" alt="">
+                </div>
+                <div class="flex justify-center flex-col">
+                    <h2 class="mb-[1rem] mt-0 font-monureg" style="letter-spacing: 0.1em; font-size: 2.5em; line-height: 1;">HOW IT BEGAN</h2>
+                    <p class="italic leading-7" style="margin-top: 0 !important; margin-bottom: 0 !important; margin-block-start: 1rem; margin-block-end: 1rem; font-size: 18px;">
+                        In 2011, co-founders Mike Darlington and Ari Paunonen met at the University of Waterloo, connecting over their shared love of music and entrepreneurial spirit. Noticing the steady rise of video platforms like YouTube, as well as the booming electronic music scene at the time, Mike and Ari set out to launch a boundary-pushing digital record label that would deliver high-quality, accessible electronic music. With community at the core, they built a tight-knit family of passionate artists, global music fans, avid gamers, and content creators, that came to be known as Monstercat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="companyValues text-secondary font-montserrat text-center mb-[3rem] p-[0, 1rem] w-[75%] mx-auto">
+        <h2 class="font-[400] font-monureg text-[2.5rem] leading-4 tracking-widest mb-[3rem]">Company Values</h2>
+        <div class="grid grid-cols-4 gap-[3rem]">
+            <div>
+                <h3 class="uppercase">Company</h3>
+                <p class="italic leading-7 text-[18px]" style="margin-block-start: 1rem; margin-block-end: 1rem;">Community is at the heart of everything we do, nurtured by an inclusive culture of collaboration, diversity, positivity, and inspiring music.</p>
+            </div>
+    
+            <div>
+                <h3 class="uppercase">Curiosity</h3>
+                <p class="italic leading-7 text-[18px]" style="margin-block-start: 1rem; margin-block-end: 1rem;">In order to grow we always ask questions, remain open to fresh perspectives, and challenge ourselves to think differently.</p>
+                </p>
+            </div>
+    
+            <div>
+                <h3 class="uppercase">Integrity</h3>
+                <p class="italic leading-7 text-[18px]" style="margin-block-start: 1rem; margin-block-end: 1rem;">We hold ourselves accountable and follow through on our word, with honest and respectful communication.</p>
+            </div>
+    
+            <div>
+                <h3 class="uppercase">Tenacity</h3>
+                <p class="italic leading-7 text-[18px]" style="margin-block-start: 1rem; margin-block-end: 1rem;">We don't fear failure. Anything is possible; if we can conceive it, we can achieve it.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="gallery mb-[7rem] w-[95%] mx-auto">
+        <div class="relative overflow-hidden">
+            <div class="slider-container overflow-hidden">
+                <div class="my-slider" style="left: 50px; display: flex; position: relative; top: 0; flex-wrap: nowrap;">
+                    <div class="item" style="position: relative; overflow: hidden; display: flex; flex-shrink: 0; align-items: center; cursor: grab;  width: 1259px;">
+                        <img src="https://cdn.monstercat.com/about/compound-shot-4.webp" alt="">
+                    </div>
+
+                    <div class="item flex" style="width: 1259px;">
+                        <img src="https://cdn.monstercat.com/about/london-shot.webp" alt="">
+                    </div>
+
+                    <div class="item flex" style="width: 1259px;">
+                        <img src="https://cdn.monstercat.com/about/monstercat-wall.webp" alt="">
+                    </div>
+
+                    <div class="item flex" style="width: 1259px;">
+                        <img src="https://cdn.monstercat.com/about/compound-shot.webp" alt="">
+                    </div>
+
+                    <div class="item flex" style="width: 1259px;">
+                        <img src="https://cdn.monstercat.com/about/crowd-shot.webp" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support mb-[9rem] text-secondary text-center">
+        <img width="250px" class="img-responsive mx-auto" src="img/creativelogo.png" alt="">
+        <p class="pr-[5rem] pl-[5rem] italic text-[16px] leading-8 font-montserrat" style="margin-block-start: 1rem; margin-block-end: 1rem;">Supported by Creative BC and the Province of British Columbia</p>
+        <img width="850px" class="img-responsive mx-auto" src="img/FactorLogo.webp" alt="">
+    </section>
+
+    <footer class="footer text-secondary mb-[5rem] w-[59rem] mx-auto">
+        <div class="footercontent font-monureg text-[18px]">
+            <nav class="grid grid-cols-3 gap-[1rem]">
+                <ul  class="leading-8 tracking-widest">
+                    <li><a href="#">ABOUT MONSTERCAT</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">PRESS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">TERMS OF SERVICE</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                </ul>
+                <div class="leading-7">
+                    <p class="text-[#898888]">MONSTERCAT NEWS</p>
+                    <p class="italic text-[0.9rem] tracking-widest  font-montserrat">Don't miss a thing, stay up to date with the latest news from us.</p>
+                    <form class="signup-input  text-[73%] mt-6 border-b border-solid-[1px] border-[#3e3b3c] flex pb-[0.5rem]">
+                        <input class="input-bordered border-transparent bg-transparent" placeholder="Enter email" name="email">
+                        <button type="submit" class="input-bordered border-transparent rounded-none">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <hr class="mb-[3rem] mt-[3rem]">
+        <div class="clearfix grid grid-cols-2">
+            <p class="italic tracking-widest">2011 - 2023 © Monstercat, All Rights Reserved</p>
+        
+        <div class="items-center justify-end">
+            <ul class="float-right flex text-[18px] gap-[1rem]">
+                <li><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-tiktok"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-spotify"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-apple"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-twitch"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-discord"></i></li>
+                <li><a href="#"></a><i class="fa-solid fa-circle-play"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+    </div>
+    <p class="text-center pt-10 text-[0.8rem] tracking-widest font-montserrat italic">We acknowledge with gratitude the traditional, ancestral and unceded land of the Coast Salish peoples, including the territories of the Sḵwx̱wú7mesh (Squamish), Stó:lō and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) and xʷməθkʷəy̓əm (Musqueam) Nations, on which Monstercat's Vancouver HQ stands.</p>
+    <p class="text-center mt-5 text-[0.8rem] font-montserrat italic">We acknowledge the unceded and ancestral territories of the Gabrielino/Tongva peoples on which our LA team live and work.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+<script type="module">
+  
+    var slider = tns({
+      container: '.my-slider',
+      items: 1,
+      slideBy: 'page',
+      autoplay: false,
+      autoplayButtonOutput: false,
+      controls: false,
+      navPosition: 'bottom',
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color:black ;
+    background-image: url("https://cdn.monstercat.com/background-tile.webp");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    font-weight: normal;
+}
+.background-page { 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(180deg,black 50%, transparent 100%);
+}
+.background-poster {
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.background-page .background-poster {
+    filter: blur(10px) brightness(50%);
+}
+
+body .social-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+    pointer-events: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    align-items: center;
+    position: relative;
+}
+.content ul {
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    padding: 0;
+    width: 50px;
+    text-align: center;
+    pointer-events: initial;
+    margin-right:1.2rem ;
+    z-index: -1;
+}
+
+.content ul li {
+    @apply p-2 
+}
+.bannerContent h3{
+    writing-mode: vertical-rl;
+    @apply rotate-180 absolute left-[11.5rem] bottom-[6rem]
+}
+.bannerContent h1 {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Monureg';
+}
+.bannerContent h2 {
+    font-family: 'Monureg';
+}
+
+.player{
+    @apply items-center
+}
+@font-face {
+    font-family: 'Monument';
+    src: url(fonts/Monbold.otf);
+}
+@font-face {
+    font-family: 'Monureg';
+    src: url(fonts/Monreg.otf);
+}
+.box-video {
+    @apply w-[100%] h-[100%] aspect-video relative
+}
+hr {
+    @apply border-none h-[1px] bg-[#f1f1f1]    
+}
+
+.aboutbanner {
+    max-height: 100vh;
+    overflow: hidden;
+}
+.about-content h1 {
+    font-size: 3.5rem;
+    color: white;
+    line-height: 1;
+}
+.about-content h1 span{
+    -webkit-text-stroke: 2px white;
+    -webkit-text-fill-color: transparent ;
+    font-size: 3.5rem;
+    letter-spacing: 0.3rem;
+
+}
+ 
+.gradient {
+    background: linear-gradient(180deg, transparent 5%, #131112, #131112 100%);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+}
+
+.companyValues h3{
+    font-family: 'Monureg';
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+
+}
+
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.tns-nav {
+    text-align: center;
+    position: relative;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+.tns-nav button{
+        height: 10px;
+        width: 70px;
+        border: solid 1px white;
+        margin: 0 4px;
+}
+.tns-nav :hover {
+    background-color: white;
+}
+    
+.tns-nav .tns-nav-active{
+    background-color: white;
+}
+
+.support .img-responsive {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.nav-active .navigation {
+    pointer-events: initial;
+}
+body.nav-active .navigation .navigation-container {
+    transform: translateX(-100%);
+}
+.navigation-container {
+    pointer-events: initial;
+    height: 100%;
+    width: 420px;
+    max-width: 100%;
+    background: black;
+    overflow: hidden;
+    top: 0;
+    left: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navigation .navigation-container .top{
+    flex-shrink: 0;
+    padding: 2rem;
+}
+.navigation .navigation-container .scroller {
+    flex-shrink: 1;
+    overflow: auto;
+    padding: 2rem;
+    flex-basis: 100%;
+    margin-right: 2rem;
+}
+
+.menu-toggle {
+    pointer-events: initial;
+}
+.menu-toggle i{
+    margin-left: 2px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0 ,0.5);
+}
+.close-menu {
+    position: absolute;
+    top: 37px;
+    right: 36px;
+    font-size: 28px;
+}
+
+.contact-us-section h1 span {
+    -webkit-text-stroke: 2px white;
+    -webkit-text-fill-color: transparent ;
+    font-size: 3.5rem;
+    letter-spacing: 0.3rem;
+}
+
+.collapsable {
+    max-height: 0;
+    padding: 0;
+    transition: 0.2s ease-in-out;
+}
+.collapsable.active {
+    max-height: 500px;
+    border: 1px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+.accordionTitle.active i {
+    transform: rotate(45deg);
+    transition: 0.2s ease-in-out;
+}
+
+.connect p {
+    color: #c4c4c4;
+    font-style: italic;
+    line-height: 1.75;
+    font-size: 18px;
+    
+
+}
